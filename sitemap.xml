@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://blog.ahuaaa.xyz/about/index.html</loc>
+    
+    <lastmod>2021-11-17</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://blog.ahuaaa.xyz/2021/11/16/202111162204/</loc>
     
     <lastmod>2021-11-16</lastmod>
@@ -53,22 +60,22 @@
 
   <url>
     <loc>http://blog.ahuaaa.xyz/</loc>
-    <lastmod>2021-11-16</lastmod>
+    <lastmod>2021-11-17</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
 
   
   <url>
-    <loc>http://blog.ahuaaa.xyz/tags/jQuery%E7%AC%94%E8%AE%B0/</loc>
-    <lastmod>2021-11-16</lastmod>
+    <loc>http://blog.ahuaaa.xyz/tags/JavaScript%E4%B8%93%E9%A2%98/</loc>
+    <lastmod>2021-11-17</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://blog.ahuaaa.xyz/tags/JavaScript%E4%B8%93%E9%A2%98/</loc>
-    <lastmod>2021-11-16</lastmod>
+    <loc>http://blog.ahuaaa.xyz/tags/jQuery%E7%AC%94%E8%AE%B0/</loc>
+    <lastmod>2021-11-17</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
@@ -76,15 +83,15 @@
 
   
   <url>
-    <loc>http://blog.ahuaaa.xyz/categories/jQuery%E7%AC%94%E8%AE%B0/</loc>
-    <lastmod>2021-11-16</lastmod>
+    <loc>http://blog.ahuaaa.xyz/categories/JavaScript%E4%B8%93%E9%A2%98/</loc>
+    <lastmod>2021-11-17</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://blog.ahuaaa.xyz/categories/JavaScript%E4%B8%93%E9%A2%98/</loc>
-    <lastmod>2021-11-16</lastmod>
+    <loc>http://blog.ahuaaa.xyz/categories/jQuery%E7%AC%94%E8%AE%B0/</loc>
+    <lastmod>2021-11-17</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
