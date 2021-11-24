@@ -6,7 +6,7 @@
   <link href="http://blog.ahuaaa.xyz/atom.xml" rel="self"/>
   
   <link href="http://blog.ahuaaa.xyz/"/>
-  <updated>2021-11-16T14:48:07.073Z</updated>
+  <updated>2021-11-24T11:25:46.362Z</updated>
   <id>http://blog.ahuaaa.xyz/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>使用JAVA SSM框架遇到的一些坑</title>
+    <link href="http://blog.ahuaaa.xyz/2021/11/24/20211124/"/>
+    <id>http://blog.ahuaaa.xyz/2021/11/24/20211124/</id>
+    <published>2021-11-24T11:19:35.000Z</published>
+    <updated>2021-11-24T11:25:46.362Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="c-forEach的报错"><a href="#c-forEach的报错" class="headerlink" title="c:forEach的报错"></a>c:forEach的报错</h1><p>原因是jsp页面没有引用下面这行代码</p><figure class="highlight jsp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;%@ taglib uri=<span class="string">&quot;http://java.sun.com/jsp/jstl/core&quot;</span> prefix=<span class="string">&quot;c&quot;</span>%&gt;</span><br></pre></td></tr></table></figure>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;c-forEach的报错&quot;&gt;&lt;a href=&quot;#c-forEach的报错&quot; class=&quot;headerlink&quot; title=&quot;c:forEach的报错&quot;&gt;&lt;/a&gt;c:forEach的报错&lt;/h1&gt;&lt;p&gt;原因是jsp页面没有引用下面这行代码&lt;/p&gt;
+&lt;figure</summary>
+      
+    
+    
+    
+    
+    <category term="JAVA" scheme="http://blog.ahuaaa.xyz/tags/JAVA/"/>
+    
+  </entry>
   
   <entry>
     <title>2.JavaScript专题之跟着 underscore 学节流</title>
