@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>Star&#39;s Blog 星星博客</title>
+  <title>Star&#39;s Blog</title>
   
-  <subtitle>只是山野笨拙 我也笨拙 遇见美景我也束手无策</subtitle>
+  <subtitle>星星博客</subtitle>
   <link href="http://blog.ahuaaa.xyz/atom.xml" rel="self"/>
   
   <link href="http://blog.ahuaaa.xyz/"/>
