@@ -6,7 +6,7 @@
   <link href="http://blog.ahuaaa.xyz/atom.xml" rel="self"/>
   
   <link href="http://blog.ahuaaa.xyz/"/>
-  <updated>2021-11-24T15:10:06.051Z</updated>
+  <updated>2021-11-26T00:49:31.002Z</updated>
   <id>http://blog.ahuaaa.xyz/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>使用vpn后git提交失败的问题</title>
+    <link href="http://blog.ahuaaa.xyz/2021/11/26/202111230844/"/>
+    <id>http://blog.ahuaaa.xyz/2021/11/26/202111230844/</id>
+    <published>2021-11-26T00:44:23.000Z</published>
+    <updated>2021-11-26T00:49:31.002Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="使用VPN后git提交会报错"><a href="#使用VPN后git提交会报错" class="headerlink" title="使用VPN后git提交会报错"></a>使用VPN后git提交会报错</h1><p>原因是因为系统控制台这些需要输入命令才可以。<br>下面是用小奶猫(clash)时候的命令</p><figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$Env:http_proxy</span>=<span class="string">&quot;http://127.0.0.1:7890&quot;</span>;<span class="variable">$Env:https_proxy</span>=<span class="string">&quot;http://127.0.0.1:7890&quot;</span></span><br></pre></td></tr></table></figure>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;使用VPN后git提交会报错&quot;&gt;&lt;a href=&quot;#使用VPN后git提交会报错&quot; class=&quot;headerlink&quot; title=&quot;使用VPN后git提交会报错&quot;&gt;&lt;/a&gt;使用VPN后git提交会报错&lt;/h1&gt;&lt;p&gt;原因是因为系统控制台这些需要输入命令才可以。</summary>
+      
+    
+    
+    
+    <category term="git提交失败" scheme="http://blog.ahuaaa.xyz/categories/git%E6%8F%90%E4%BA%A4%E5%A4%B1%E8%B4%A5/"/>
+    
+    
+    <category term="git提交失败" scheme="http://blog.ahuaaa.xyz/tags/git%E6%8F%90%E4%BA%A4%E5%A4%B1%E8%B4%A5/"/>
+    
+  </entry>
   
   <entry>
     <title>Java_web Session技术</title>
