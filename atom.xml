@@ -6,7 +6,7 @@
   <link href="http://blog.ahuaaa.xyz/atom.xml" rel="self"/>
   
   <link href="http://blog.ahuaaa.xyz/"/>
-  <updated>2021-11-26T00:59:25.220Z</updated>
+  <updated>2021-11-26T01:04:58.087Z</updated>
   <id>http://blog.ahuaaa.xyz/</id>
   
   <author>
@@ -17,18 +17,18 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>使用VPN后git push失败的问题</title>
+    <title>使用VPN后git push等操作会报错</title>
     <link href="http://blog.ahuaaa.xyz/2021/11/26/202111230844/"/>
     <id>http://blog.ahuaaa.xyz/2021/11/26/202111230844/</id>
     <published>2021-11-26T00:44:23.000Z</published>
-    <updated>2021-11-26T00:59:25.220Z</updated>
+    <updated>2021-11-26T01:04:58.087Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="使用VPN后git提交会报错"><a href="#使用VPN后git提交会报错" class="headerlink" title="使用VPN后git提交会报错"></a>使用VPN后git提交会报错</h1><p>原因是因为设置的代理对终端不起作用<br>下面是用小奶猫(clash)时候的命令 假设你的本地代理地址是127.0.0.1，端口是7890，那么应该在终端执行：</p><figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$Env:http_proxy</span>=<span class="string">&quot;http://127.0.0.1:7890&quot;</span>;<span class="variable">$Env:https_proxy</span>=<span class="string">&quot;http://127.0.0.1:7890&quot;</span></span><br></pre></td></tr></table></figure><figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">set</span> http_proxy=http://<span class="number">127</span>.<span class="number">0</span>.<span class="number">0</span>.<span class="number">1</span>:<span class="number">7890</span> &amp; <span class="built_in">set</span> https_proxy=http://<span class="number">127</span>.<span class="number">0</span>.<span class="number">0</span>.<span class="number">1</span>:<span class="number">7890</span></span><br></pre></td></tr></table></figure><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">export https_proxy=http://127.0.0.1:7890;export http_proxy=http://127.0.0.1:7890;export all_proxy=socks5://127.0.0.1:7890</span><br></pre></td></tr></table></figure><p>如果需要开机自动设置，把上面的代码加到终端的profile文件里（例如bash的.bash_profile，zsh的.zprofile）</p>]]></content>
+    <content type="html"><![CDATA[<h1 id="使用VPN后git-push等操作会报错"><a href="#使用VPN后git-push等操作会报错" class="headerlink" title="使用VPN后git push等操作会报错"></a>使用VPN后git push等操作会报错</h1><p>原因是因为设置的代理对终端不起作用<br>下面是用小奶猫(clash)时候的命令 假设你的本地代理地址是127.0.0.1，端口是7890，那么应该在终端执行：</p><figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$Env:http_proxy</span>=<span class="string">&quot;http://127.0.0.1:7890&quot;</span>;<span class="variable">$Env:https_proxy</span>=<span class="string">&quot;http://127.0.0.1:7890&quot;</span></span><br></pre></td></tr></table></figure><figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">set</span> http_proxy=http://<span class="number">127</span>.<span class="number">0</span>.<span class="number">0</span>.<span class="number">1</span>:<span class="number">7890</span> &amp; <span class="built_in">set</span> https_proxy=http://<span class="number">127</span>.<span class="number">0</span>.<span class="number">0</span>.<span class="number">1</span>:<span class="number">7890</span></span><br></pre></td></tr></table></figure><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">export https_proxy=http://127.0.0.1:7890;export http_proxy=http://127.0.0.1:7890;export all_proxy=socks5://127.0.0.1:7890</span><br></pre></td></tr></table></figure><p>如果需要开机自动设置，把上面的代码加到终端的profile文件里（例如bash的.bash_profile，zsh的.zprofile）</p>]]></content>
     
     
       
       
-    <summary type="html">&lt;h1 id=&quot;使用VPN后git提交会报错&quot;&gt;&lt;a href=&quot;#使用VPN后git提交会报错&quot; class=&quot;headerlink&quot; title=&quot;使用VPN后git提交会报错&quot;&gt;&lt;/a&gt;使用VPN后git提交会报错&lt;/h1&gt;&lt;p&gt;原因是因为设置的代理对终端不起作用&lt;br&gt;下</summary>
+    <summary type="html">&lt;h1 id=&quot;使用VPN后git-push等操作会报错&quot;&gt;&lt;a href=&quot;#使用VPN后git-push等操作会报错&quot; class=&quot;headerlink&quot; title=&quot;使用VPN后git push等操作会报错&quot;&gt;&lt;/a&gt;使用VPN后git push等操作会报错&lt;/h1&gt;&lt;</summary>
       
     
     
