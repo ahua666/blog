@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>前端入口测试题1</title>
+      <link href="/2021/12/02/202112020321/"/>
+      <url>/2021/12/02/202112020321/</url>
+      
+        <content type="html"><![CDATA[<h1 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h1><p>页面元素全部使用弹性布局，有效减少代码冗余，优化页面。</p><h1 id="成果图"><a href="#成果图" class="headerlink" title="成果图"></a>成果图</h1><p><img src="https://cdn.jsdelivr.net/gh/ahua666/blog@master/img/202112020323.png" alt="成果图"></p><h1 id="预览"><a href="#预览" class="headerlink" title="预览"></a>预览</h1><div class="btn-center"><a class="btn-beautify button--animated larger larger" href="https://blog.ahuaaa.xyz/pan/demo1/"   title="点击预览"><i class="far fa-hand-point-right"></i><span>点击预览</span></a></div>]]></content>
+      
+      
+      <categories>
+          
+          <category> 前端开发 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 前端入口测试题1 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>前端入口测试题2</title>
       <link href="/2021/12/02/202112020308/"/>
       <url>/2021/12/02/202112020308/</url>
