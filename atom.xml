@@ -6,7 +6,7 @@
   <link href="http://blog.ahuaaa.xyz/atom.xml" rel="self"/>
   
   <link href="http://blog.ahuaaa.xyz/"/>
-  <updated>2021-12-11T15:28:05.879Z</updated>
+  <updated>2021-12-11T15:30:55.024Z</updated>
   <id>http://blog.ahuaaa.xyz/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="http://blog.ahuaaa.xyz/2021/12/11/202112112320/"/>
     <id>http://blog.ahuaaa.xyz/2021/12/11/202112112320/</id>
     <published>2021-12-11T15:20:49.000Z</published>
-    <updated>2021-12-11T15:28:05.879Z</updated>
+    <updated>2021-12-11T15:30:55.024Z</updated>
     
     <content type="html"><![CDATA[<h1 id="自用的宝塔面板一键优化补丁"><a href="#自用的宝塔面板一键优化补丁" class="headerlink" title="自用的宝塔面板一键优化补丁"></a>自用的宝塔面板一键优化补丁</h1><p>这个是自用的宝塔面板一键优化补丁，主要有以下优化项目：</p><ol><li><p>去除宝塔面板强制绑定账号</p></li><li><p>去除各种删除操作时的计算题与延时等待</p></li><li><p>去除创建网站自动创建的垃圾文件（index.html、404.html、.htaccess）</p></li><li><p>关闭未绑定域名提示页面，防止有人访问未绑定域名直接看出来是用的宝塔面板</p></li><li><p>关闭活动推荐与在线客服</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wget -O optimize.sh http://blog.ahuaaa.xyz/bt/optimize.sh &amp;&amp; bash optimize.sh</span><br></pre></td></tr></table></figure><p>适用宝塔面板版本：7.7</p></li></ol><p>全部使用补丁的方式，而不是替换文件的方式，方便后续升级版本的修改。</p>]]></content>
     
