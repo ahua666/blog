@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://blog.ahuaaa.xyz/2022/03/26/threewave/</loc>
+    
+    <lastmod>2022-03-26</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>http://blog.ahuaaa.xyz/2021/01/18/hello-world/</loc>
     
     <lastmod>2022-03-26</lastmod>
@@ -249,6 +258,13 @@
     <priority>0.2</priority>
   </url>
   
+  <url>
+    <loc>http://blog.ahuaaa.xyz/tags/three-js/</loc>
+    <lastmod>2022-03-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
 
   
   <url>
@@ -309,6 +325,13 @@
   
   <url>
     <loc>http://blog.ahuaaa.xyz/categories/JavaScript/</loc>
+    <lastmod>2022-03-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.ahuaaa.xyz/categories/three-js/</loc>
     <lastmod>2022-03-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
