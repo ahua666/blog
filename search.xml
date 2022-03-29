@@ -117,31 +117,6 @@
     
     
     <entry>
-      <title>前端入口测试题3</title>
-      <link href="/2021/12/04/202112042136/"/>
-      <url>/2021/12/04/202112042136/</url>
-      
-        <content type="html"><![CDATA[<h1 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h1><p>页面元素全部使用弹性布局，有效减少代码冗余，优化页面。</p><h1 id="成果图"><a href="#成果图" class="headerlink" title="成果图"></a>成果图</h1><p><img src="https://pans.vercel.app/img/202112042137.png" alt="成果图"></p><h1 id="预览"><a href="#预览" class="headerlink" title="预览"></a>预览</h1><a class="btn-beautify orange center larger" href="https://pans.ahuaaa.xyz/%E5%89%8D%E7%AB%AF%E6%B5%8B%E8%AF%95/demo3/"   title="点我预览"><i class="far fa-hand-point-right"></i><span>点我预览</span></a><!-- <div class="btn-center">https://pans.vercel.app/%E5%89%8D%E7%AB%AF%E6%B5%8B%E8%AF%95/demo3/</div> -->]]></content>
-      
-      
-      <categories>
-          
-          <category> 前端开发 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 前端入口测试题3 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>IntelliJ IDEA 2021.3最新激活破解教程（可激活至2099年）</title>
       <link href="/2021/12/03/202112031625/"/>
       <url>/2021/12/03/202112031625/</url>
@@ -159,56 +134,6 @@
         <tags>
             
             <tag> IDEA </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>前端入口测试题1</title>
-      <link href="/2021/12/02/202112020321/"/>
-      <url>/2021/12/02/202112020321/</url>
-      
-        <content type="html"><![CDATA[<h1 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h1><p>页面元素全部使用弹性布局，有效减少代码冗余，优化页面。</p><h1 id="成果图"><a href="#成果图" class="headerlink" title="成果图"></a>成果图</h1><p><img src="https://pans.vercel.app/img/202112020323.png" alt="成果图"></p><h1 id="预览"><a href="#预览" class="headerlink" title="预览"></a>预览</h1><a class="btn-beautify orange center larger" href="https://pans.ahuaaa.xyz/%E5%89%8D%E7%AB%AF%E6%B5%8B%E8%AF%95/demo1"   title="点我预览"><i class="far fa-hand-point-right"></i><span>点我预览</span></a><!-- <div class="btn-center">https://pans.vercel.app/%E5%89%8D%E7%AB%AF%E6%B5%8B%E8%AF%95/demo1</div> -->]]></content>
-      
-      
-      <categories>
-          
-          <category> 前端开发 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 前端入口测试题1 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>前端入口测试题2</title>
-      <link href="/2021/12/02/202112020308/"/>
-      <url>/2021/12/02/202112020308/</url>
-      
-        <content type="html"><![CDATA[<h1 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h1><p>页面元素全部使用弹性布局，有效减少代码冗余，优化页面。</p><h1 id="成果图"><a href="#成果图" class="headerlink" title="成果图"></a>成果图</h1><p><img src="https://pans.vercel.app/img/202112020310.png" alt="成果图"></p><h1 id="预览"><a href="#预览" class="headerlink" title="预览"></a>预览</h1><a class="btn-beautify orange center larger" href="https://pans.ahuaaa.xyz/%E5%89%8D%E7%AB%AF%E6%B5%8B%E8%AF%95/demo2"   title="点我预览"><i class="far fa-hand-point-right"></i><span>点我预览</span></a><!-- <div class="btn-center">https://pans.vercel.app/%E5%89%8D%E7%AB%AF%E6%B5%8B%E8%AF%95/demo2/</div> -->]]></content>
-      
-      
-      <categories>
-          
-          <category> 前端开发 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 前端入口测试题2 </tag>
             
         </tags>
       
@@ -399,6 +324,81 @@
         <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
       
       
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>前端入口测试题3</title>
+      <link href="/2020/12/04/202112042136/"/>
+      <url>/2020/12/04/202112042136/</url>
+      
+        <content type="html"><![CDATA[<h1 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h1><p>页面元素全部使用弹性布局，有效减少代码冗余，优化页面。</p><h1 id="成果图"><a href="#成果图" class="headerlink" title="成果图"></a>成果图</h1><p><img src="https://pans.vercel.app/img/202112042137.png" alt="成果图"></p><h1 id="预览"><a href="#预览" class="headerlink" title="预览"></a>预览</h1><a class="btn-beautify orange center larger" href="https://pans.ahuaaa.xyz/%E5%89%8D%E7%AB%AF%E6%B5%8B%E8%AF%95/demo3/"   title="点我预览"><i class="far fa-hand-point-right"></i><span>点我预览</span></a><!-- <div class="btn-center">https://pans.vercel.app/%E5%89%8D%E7%AB%AF%E6%B5%8B%E8%AF%95/demo3/</div> -->]]></content>
+      
+      
+      <categories>
+          
+          <category> 前端开发 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 前端入口测试题3 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>前端入口测试题1</title>
+      <link href="/2020/12/02/202112020321/"/>
+      <url>/2020/12/02/202112020321/</url>
+      
+        <content type="html"><![CDATA[<h1 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h1><p>页面元素全部使用弹性布局，有效减少代码冗余，优化页面。</p><h1 id="成果图"><a href="#成果图" class="headerlink" title="成果图"></a>成果图</h1><p><img src="https://pans.vercel.app/img/202112020323.png" alt="成果图"></p><h1 id="预览"><a href="#预览" class="headerlink" title="预览"></a>预览</h1><a class="btn-beautify orange center larger" href="https://pans.ahuaaa.xyz/%E5%89%8D%E7%AB%AF%E6%B5%8B%E8%AF%95/demo1"   title="点我预览"><i class="far fa-hand-point-right"></i><span>点我预览</span></a><!-- <div class="btn-center">https://pans.vercel.app/%E5%89%8D%E7%AB%AF%E6%B5%8B%E8%AF%95/demo1</div> -->]]></content>
+      
+      
+      <categories>
+          
+          <category> 前端开发 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 前端入口测试题1 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>前端入口测试题2</title>
+      <link href="/2020/12/02/202112020308/"/>
+      <url>/2020/12/02/202112020308/</url>
+      
+        <content type="html"><![CDATA[<h1 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h1><p>页面元素全部使用弹性布局，有效减少代码冗余，优化页面。</p><h1 id="成果图"><a href="#成果图" class="headerlink" title="成果图"></a>成果图</h1><p><img src="https://pans.vercel.app/img/202112020310.png" alt="成果图"></p><h1 id="预览"><a href="#预览" class="headerlink" title="预览"></a>预览</h1><a class="btn-beautify orange center larger" href="https://pans.ahuaaa.xyz/%E5%89%8D%E7%AB%AF%E6%B5%8B%E8%AF%95/demo2"   title="点我预览"><i class="far fa-hand-point-right"></i><span>点我预览</span></a><!-- <div class="btn-center">https://pans.vercel.app/%E5%89%8D%E7%AB%AF%E6%B5%8B%E8%AF%95/demo2/</div> -->]]></content>
+      
+      
+      <categories>
+          
+          <category> 前端开发 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 前端入口测试题2 </tag>
+            
+        </tags>
       
     </entry>
     
