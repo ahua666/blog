@@ -6,7 +6,7 @@
   <link href="http://blog.ahuaaa.cn/atom.xml" rel="self"/>
   
   <link href="http://blog.ahuaaa.cn/"/>
-  <updated>2023-01-10T10:27:56.668Z</updated>
+  <updated>2023-01-12T14:25:05.234Z</updated>
   <id>http://blog.ahuaaa.cn/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>前端GBK编码转换(物联网开发)</title>
+    <link href="http://blog.ahuaaa.cn/2023/01/12/js-gbk/"/>
+    <id>http://blog.ahuaaa.cn/2023/01/12/js-gbk/</id>
+    <published>2023-01-12T14:18:49.000Z</published>
+    <updated>2023-01-12T14:25:05.234Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>最近因为太忙了，实在没有时间更新博客，最近因为在弄APP开发，特此记录下。</p><h2 id="编码库和解码库"><a href="#编码库和解码库" class="headerlink" title="编码库和解码库"></a>编码库和解码库</h2><p>因为前端是无法直接做到GBK编码转换的，所以用到了字典库。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h1&gt;&lt;p&gt;最近因为太忙了，实在没有时间更新博客，最近因为在弄APP开发，特此记录下。&lt;/p&gt;
+&lt;h2 id=&quot;编码库和解码库&quot;&gt;&lt;a href=&quot;#编</summary>
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>IntelliJ系列所有产品 2022.2.X最新永久激活教程</title>
@@ -467,31 +488,6 @@
     
     
     <category term="前端入口测试题1" scheme="http://blog.ahuaaa.cn/tags/%E5%89%8D%E7%AB%AF%E5%85%A5%E5%8F%A3%E6%B5%8B%E8%AF%95%E9%A2%981/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>前端入口测试题2</title>
-    <link href="http://blog.ahuaaa.cn/2020/12/02/202112020308/"/>
-    <id>http://blog.ahuaaa.cn/2020/12/02/202112020308/</id>
-    <published>2020-12-01T19:08:12.000Z</published>
-    <updated>2023-01-10T10:27:56.655Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h1><p>页面元素全部使用弹性布局，有效减少代码冗余，优化页面。</p><h1 id="成果图"><a href="#成果图" class="headerlink" title="成果图"></a>成果图</h1><p><img src="https://pans.ahuaaa.cn/img/202112020310.png" alt="成果图"></p><h1 id="预览"><a href="#预览" class="headerlink" title="预览"></a>预览</h1><a class="btn-beautify orange center larger" href="https://pans.ahuaaa.cn/%E5%89%8D%E7%AB%AF%E6%B5%8B%E8%AF%95/demo2"   title="点我预览"><i class="far fa-hand-point-right"></i><span>点我预览</span></a><!-- <div class="btn-center">https://pans.ahuaaa.cn/%E5%89%8D%E7%AB%AF%E6%B5%8B%E8%AF%95/demo2/</div> -->]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;h1 id=&quot;简介&quot;&gt;&lt;a href=&quot;#简介&quot; class=&quot;headerlink&quot; title=&quot;简介&quot;&gt;&lt;/a&gt;简介&lt;/h1&gt;&lt;p&gt;页面元素全部使用弹性布局，有效减少代码冗余，优化页面。&lt;/p&gt;
-&lt;h1 id=&quot;成果图&quot;&gt;&lt;a href=&quot;#成果图&quot; class=&quot;hea</summary>
-      
-    
-    
-    
-    <category term="前端开发" scheme="http://blog.ahuaaa.cn/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
-    
-    
-    <category term="前端入口测试题2" scheme="http://blog.ahuaaa.cn/tags/%E5%89%8D%E7%AB%AF%E5%85%A5%E5%8F%A3%E6%B5%8B%E8%AF%95%E9%A2%982/"/>
     
   </entry>
   

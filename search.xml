@@ -4,6 +4,19 @@
   
     
     <entry>
+      <title>前端GBK编码转换(物联网开发)</title>
+      <link href="/2023/01/12/js-gbk/"/>
+      <url>/2023/01/12/js-gbk/</url>
+      
+        <content type="html"><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>最近因为太忙了，实在没有时间更新博客，最近因为在弄APP开发，特此记录下。</p><h2 id="编码库和解码库"><a href="#编码库和解码库" class="headerlink" title="编码库和解码库"></a>编码库和解码库</h2><p>因为前端是无法直接做到GBK编码转换的，所以用到了字典库。</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>IntelliJ系列所有产品 2022.2.X最新永久激活教程</title>
       <link href="/2022/11/03/idea202223/"/>
       <url>/2022/11/03/idea202223/</url>
