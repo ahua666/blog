@@ -6,7 +6,7 @@
   <link href="http://blog.ahuaaa.cn/atom.xml" rel="self"/>
   
   <link href="http://blog.ahuaaa.cn/"/>
-  <updated>2023-01-18T09:05:52.398Z</updated>
+  <updated>2023-01-18T09:48:24.982Z</updated>
   <id>http://blog.ahuaaa.cn/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>某传奇辅助山寨</title>
+    <link href="http://blog.ahuaaa.cn/2023/01/18/Ezdun/"/>
+    <id>http://blog.ahuaaa.cn/2023/01/18/Ezdun/</id>
+    <published>2023-01-18T09:35:29.000Z</published>
+    <updated>2023-01-18T09:48:24.982Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>博客发布的一切破解补丁、注册机和注册信息及软件的解密分析文章仅限用于学习和研究目的；不得将上述内容用于商业或者非法用途，否则，一切后果请用户自负。 本站信息来自网络，版权争议与本站无关。您必须在下载后的24个小时之内，从您的电脑中彻底删除上述内容。如果您喜欢该程序，请支持正版软件，购买注册，得到更好的正版服务。如有侵权请邮件与我们联系处理。</p><h1 id="查壳"><a href="#查壳" class="headerlink" title="查壳"></a>查壳</h1><p>这里我找不到最开始的源文件了。壳是E盾企业个人版的<br>附上被火绒处理后查壳的图，火绒的处理日志也找不到了，（被火绒处理后就可以查到字符串了）<br><img src="https://pans.ahuaaa.cn/img/2777a0d29ea22d71be8babab4882f76.png"></p><h1 id="载入OD"><a href="#载入OD" class="headerlink" title="载入OD"></a>载入OD</h1><p>E盾带有OD检测，需要装动态标题插件才能调试<br><img src="https://pans.ahuaaa.cn/img/12d2b0884cceba16aa37328f3aa9e35.png"><br>这里可以看到有个（7E21FFCD）是E盾企业个人版本特征码，E盾留的后门可以直接进入后台生成、查询、封禁卡密、封禁用户，给代理用户增加余额等等一系列操作。</p><h1 id="直接制作补丁"><a href="#直接制作补丁" class="headerlink" title="直接制作补丁"></a>直接制作补丁</h1>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h1&gt;&lt;p&gt;博客发布的一切破解补丁、注册机和注册信息及软件的解密分析文章仅限用于学习和研究目的；不得将上述内容用于商业或者非法用途，否则，一切后果请用户</summary>
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>uniapp GBK编码解码 解决中文乱码(物联网开发)</title>
@@ -465,31 +485,6 @@
     
     
     <category term="前端入口测试题3" scheme="http://blog.ahuaaa.cn/tags/%E5%89%8D%E7%AB%AF%E5%85%A5%E5%8F%A3%E6%B5%8B%E8%AF%95%E9%A2%983/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>前端入口测试题1</title>
-    <link href="http://blog.ahuaaa.cn/2020/12/02/202112020321/"/>
-    <id>http://blog.ahuaaa.cn/2020/12/02/202112020321/</id>
-    <published>2020-12-01T19:21:31.000Z</published>
-    <updated>2023-01-10T10:27:56.668Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h1><p>页面元素全部使用弹性布局，有效减少代码冗余，优化页面。</p><h1 id="成果图"><a href="#成果图" class="headerlink" title="成果图"></a>成果图</h1><p><img src="https://pans.ahuaaa.cn/img/202112020323.png" alt="成果图"></p><h1 id="预览"><a href="#预览" class="headerlink" title="预览"></a>预览</h1><a class="btn-beautify orange center larger" href="https://pans.ahuaaa.cn/%E5%89%8D%E7%AB%AF%E6%B5%8B%E8%AF%95/demo1"   title="点我预览"><i class="far fa-hand-point-right"></i><span>点我预览</span></a><!-- <div class="btn-center">https://pans.ahuaaa.cn/%E5%89%8D%E7%AB%AF%E6%B5%8B%E8%AF%95/demo1</div> -->]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;h1 id=&quot;简介&quot;&gt;&lt;a href=&quot;#简介&quot; class=&quot;headerlink&quot; title=&quot;简介&quot;&gt;&lt;/a&gt;简介&lt;/h1&gt;&lt;p&gt;页面元素全部使用弹性布局，有效减少代码冗余，优化页面。&lt;/p&gt;
-&lt;h1 id=&quot;成果图&quot;&gt;&lt;a href=&quot;#成果图&quot; class=&quot;hea</summary>
-      
-    
-    
-    
-    <category term="前端开发" scheme="http://blog.ahuaaa.cn/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
-    
-    
-    <category term="前端入口测试题1" scheme="http://blog.ahuaaa.cn/tags/%E5%89%8D%E7%AB%AF%E5%85%A5%E5%8F%A3%E6%B5%8B%E8%AF%95%E9%A2%981/"/>
     
   </entry>
   

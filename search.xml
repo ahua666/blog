@@ -4,6 +4,19 @@
   
     
     <entry>
+      <title>某传奇辅助山寨</title>
+      <link href="/2023/01/18/Ezdun/"/>
+      <url>/2023/01/18/Ezdun/</url>
+      
+        <content type="html"><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>博客发布的一切破解补丁、注册机和注册信息及软件的解密分析文章仅限用于学习和研究目的；不得将上述内容用于商业或者非法用途，否则，一切后果请用户自负。 本站信息来自网络，版权争议与本站无关。您必须在下载后的24个小时之内，从您的电脑中彻底删除上述内容。如果您喜欢该程序，请支持正版软件，购买注册，得到更好的正版服务。如有侵权请邮件与我们联系处理。</p><h1 id="查壳"><a href="#查壳" class="headerlink" title="查壳"></a>查壳</h1><p>这里我找不到最开始的源文件了。壳是E盾企业个人版的<br>附上被火绒处理后查壳的图，火绒的处理日志也找不到了，（被火绒处理后就可以查到字符串了）<br><img src="https://pans.ahuaaa.cn/img/2777a0d29ea22d71be8babab4882f76.png"></p><h1 id="载入OD"><a href="#载入OD" class="headerlink" title="载入OD"></a>载入OD</h1><p>E盾带有OD检测，需要装动态标题插件才能调试<br><img src="https://pans.ahuaaa.cn/img/12d2b0884cceba16aa37328f3aa9e35.png"><br>这里可以看到有个（7E21FFCD）是E盾企业个人版本特征码，E盾留的后门可以直接进入后台生成、查询、封禁卡密、封禁用户，给代理用户增加余额等等一系列操作。</p><h1 id="直接制作补丁"><a href="#直接制作补丁" class="headerlink" title="直接制作补丁"></a>直接制作补丁</h1>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>uniapp GBK编码解码 解决中文乱码(物联网开发)</title>
       <link href="/2023/01/12/js-gbk/"/>
       <url>/2023/01/12/js-gbk/</url>
