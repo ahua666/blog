@@ -1,3 +1,4 @@
+http://blog.ahuaaa.cn/2023/02/21/tools/
 http://blog.ahuaaa.cn/2023/01/18/Ezdun/
 http://blog.ahuaaa.cn/2023/01/12/js-gbk/
 http://blog.ahuaaa.cn/2022/11/03/idea202223/
@@ -6,7 +7,6 @@ http://blog.ahuaaa.cn/2022/04/18/hexo-themes1/
 http://blog.ahuaaa.cn/2022/03/30/officetools/
 http://blog.ahuaaa.cn/2022/03/28/ideaall/
 http://blog.ahuaaa.cn/2022/03/27/idea2022327/
-http://blog.ahuaaa.cn/2022/03/26/threewave/
 http://blog.ahuaaa.cn/2022/01/18/202201181710/
 http://blog.ahuaaa.cn/2021/12/11/202112112320/
 http://blog.ahuaaa.cn/2021/12/03/202112031625/
