@@ -119,9 +119,9 @@
     <category term="前端" scheme="http://blog.ahuaaa.cn/categories/%E5%89%8D%E7%AB%AF/"/>
     
     
-    <category term="uniapp" scheme="http://blog.ahuaaa.cn/tags/uniapp/"/>
-    
     <category term="前端" scheme="http://blog.ahuaaa.cn/tags/%E5%89%8D%E7%AB%AF/"/>
+    
+    <category term="uniapp" scheme="http://blog.ahuaaa.cn/tags/uniapp/"/>
     
     <category term="物联网" scheme="http://blog.ahuaaa.cn/tags/%E7%89%A9%E8%81%94%E7%BD%91/"/>
     
@@ -147,11 +147,11 @@
     <category term="前端" scheme="http://blog.ahuaaa.cn/categories/%E5%89%8D%E7%AB%AF/"/>
     
     
-    <category term="前端" scheme="http://blog.ahuaaa.cn/tags/%E5%89%8D%E7%AB%AF/"/>
-    
     <category term="Vue" scheme="http://blog.ahuaaa.cn/tags/Vue/"/>
     
     <category term="vitepress" scheme="http://blog.ahuaaa.cn/tags/vitepress/"/>
+    
+    <category term="前端" scheme="http://blog.ahuaaa.cn/tags/%E5%89%8D%E7%AB%AF/"/>
     
   </entry>
   
@@ -222,9 +222,9 @@
     <category term="前端" scheme="http://blog.ahuaaa.cn/categories/%E5%89%8D%E7%AB%AF/"/>
     
     
-    <category term="uniapp" scheme="http://blog.ahuaaa.cn/tags/uniapp/"/>
-    
     <category term="Vue" scheme="http://blog.ahuaaa.cn/tags/Vue/"/>
+    
+    <category term="uniapp" scheme="http://blog.ahuaaa.cn/tags/uniapp/"/>
     
     <category term="物联网" scheme="http://blog.ahuaaa.cn/tags/%E7%89%A9%E8%81%94%E7%BD%91/"/>
     
@@ -252,9 +252,9 @@
     
     <category term="IDEA" scheme="http://blog.ahuaaa.cn/tags/IDEA/"/>
     
-    <category term="IntelliJ" scheme="http://blog.ahuaaa.cn/tags/IntelliJ/"/>
-    
     <category term="激活" scheme="http://blog.ahuaaa.cn/tags/%E6%BF%80%E6%B4%BB/"/>
+    
+    <category term="IntelliJ" scheme="http://blog.ahuaaa.cn/tags/IntelliJ/"/>
     
   </entry>
   
@@ -278,11 +278,11 @@
     <category term="前端" scheme="http://blog.ahuaaa.cn/categories/%E5%89%8D%E7%AB%AF/"/>
     
     
+    <category term="前端" scheme="http://blog.ahuaaa.cn/tags/%E5%89%8D%E7%AB%AF/"/>
+    
     <category term="Vue3" scheme="http://blog.ahuaaa.cn/tags/Vue3/"/>
     
     <category term="uniapp" scheme="http://blog.ahuaaa.cn/tags/uniapp/"/>
-    
-    <category term="前端" scheme="http://blog.ahuaaa.cn/tags/%E5%89%8D%E7%AB%AF/"/>
     
   </entry>
   
@@ -409,9 +409,9 @@
     <category term="前端" scheme="http://blog.ahuaaa.cn/categories/%E5%89%8D%E7%AB%AF/"/>
     
     
-    <category term="前端" scheme="http://blog.ahuaaa.cn/tags/%E5%89%8D%E7%AB%AF/"/>
-    
     <category term="Vue" scheme="http://blog.ahuaaa.cn/tags/Vue/"/>
+    
+    <category term="前端" scheme="http://blog.ahuaaa.cn/tags/%E5%89%8D%E7%AB%AF/"/>
     
     <category term="three.js" scheme="http://blog.ahuaaa.cn/tags/three-js/"/>
     
