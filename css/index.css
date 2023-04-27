@@ -3474,6 +3474,10 @@ body[data-type="music"] #page-header #nav a,
 body[data-type="music"] #page-header #nav .back-home-button {
   color: var(--anzhiyu-white);
 }
+body[data-type="music"] #page-header #nav a i,
+body[data-type="music"] #page-header #nav .back-home-button i {
+  color: var(--anzhiyu-white) !important;
+}
 body[data-type="music"] #footer,
 body[data-type="music"] #nav-music {
   display: none;
@@ -4438,7 +4442,7 @@ h1.page-title + .tag-cloud-list {
   transition: all 0.2s ease-in-out;
 }
 #aside-content #card-toc .toc-content .toc-link:hover {
-  color: var(--anzhiyu-lighttext);
+  color: #3b70fc;
 }
 #aside-content #card-toc .toc-content .toc-link.active {
   background: #3b70fc;
@@ -6063,6 +6067,9 @@ blockquote {
 }
 #article-container.post-content li:hover::marker {
   color: var(--pseudo-hover);
+}
+#article-container.post-content ul > li {
+  list-style-type: circle;
 }
 #article-container > :last-child {
   margin-bottom: 0 !important;
@@ -12042,6 +12049,10 @@ html.hide-aside .layout > div:first-child {
   animation-fill-mode: backwards !important;
 }
 
+[data-theme="dark"] img {
+  filter: brightness(1);
+}
+
 /* 文章hover边框 */
 #recent-posts .recent-post-item:hover {
   border: var(--style-border-hover);
@@ -13999,17 +14010,15 @@ body:has(#console.show) #nav-music .aplayer .aplayer-lrc .aplayer-lrc-contents {
     white-space: nowrap;
     animation: an-text-roll 4s cubic-bezier(0.6, 0, 0.5, 1) alternate infinite;
     min-width: 100%;
-    /* margin: 0; */
+    margin: 0;
   }
   body:has(#console.show) #nav-music .aplayer .aplayer-lrc p {
     color: var(--anzhiyu-white);
     font-size: 16px;
     margin: 0;
-    margin-top: 20px;
-    margin-bottom: 20px;
   }
   body:has(#console.show) #nav-music .aplayer .aplayer-lrc .aplayer-lrc-contents {
-    margin: -40px 0px 0;
+    margin: 0;
   }
   body:has(#console.show) #nav-music .aplayer .aplayer-info .aplayer-controller .aplayer-time {
     color: var(--anzhiyu-white);
@@ -14918,7 +14927,7 @@ i.bber-gotobb {
   color: #ffffffb3;
   line-height: 20px !important;
   height: 20px !important;
-  margin: 20px 0;
+  margin: 20px 0 !important;
 }
 
 #nav-music .aplayer .aplayer-pic {
