@@ -6,7 +6,7 @@
   <link href="http://blog.ahuaaa.cn/atom.xml" rel="self"/>
   
   <link href="http://blog.ahuaaa.cn/"/>
-  <updated>2023-04-14T19:01:09.319Z</updated>
+  <updated>2023-04-27T14:28:25.201Z</updated>
   <id>http://blog.ahuaaa.cn/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>flutter 读取bmp格式图片并转换16进制</title>
+    <link href="http://blog.ahuaaa.cn/2023/04/27/flutter0003/"/>
+    <id>http://blog.ahuaaa.cn/2023/04/27/flutter0003/</id>
+    <published>2023-04-27T14:11:18.000Z</published>
+    <updated>2023-04-27T14:28:25.201Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>经过我的测试 直接定义 final buffer = StringBuffer(); 保存的字符串会只保存最前面一部分，后面的不会显示。<br>可以在转换的时候加上 print(b.toRadixString(16).padLeft(2, ‘0’)); 这样就可以看到完整的转换内容。<br>需要进行业务处理的时候可以在这里进行。或者使用其他的方法。</p><ol><li>这个方式获取的数据会附带BMP的头文件数据，如果不需要头文件的话需要进行处理。</li></ol><h2 id="读取图片"><a href="#读取图片" class="headerlink" title="读取图片"></a>读取图片</h2><figure class="highlight dart"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">Future&lt;Uint8List&gt; loadAsset(<span class="built_in">String</span> path) <span class="keyword">async</span> &#123;</span><br><span class="line">    <span class="keyword">final</span> byteData = <span class="keyword">await</span> rootBundle.load(path);</span><br><span class="line">    <span class="built_in">print</span>(byteData.buffer.asUint8List());</span><br><span class="line">    <span class="comment">// Bitmap bitmap = Bitmap.fromHeadful(800, 480, byteData.buffer as Uint8List);</span></span><br><span class="line">    <span class="keyword">return</span> Uint8List.sublistView(byteData);</span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure><h2 id="转换-16-进制"><a href="#转换-16-进制" class="headerlink" title="转换 16 进制"></a>转换 16 进制</h2><figure class="highlight dart"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">String</span> bytesToHexString(Uint8List bytes) &#123;</span><br><span class="line">    <span class="keyword">final</span> buffer = <span class="built_in">StringBuffer</span>();</span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">final</span> b <span class="keyword">in</span> bytes) &#123;</span><br><span class="line">      buffer.write(b.toRadixString(<span class="number">16</span>).padLeft(<span class="number">2</span>, <span class="string">&#x27;0&#x27;</span>));</span><br><span class="line">      <span class="built_in">print</span>(b.toRadixString(<span class="number">16</span>).padLeft(<span class="number">2</span>, <span class="string">&#x27;0&#x27;</span>));</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> buffer.toString();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h2 id="调用"><a href="#调用" class="headerlink" title="调用"></a>调用</h2><figure class="highlight dart"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">void</span> main() <span class="keyword">async</span> &#123;</span><br><span class="line">    <span class="keyword">final</span> bytes = <span class="keyword">await</span> loadAsset(<span class="string">&#x27;assets/images/bmp/1234.bmp&#x27;</span>);</span><br><span class="line">    <span class="built_in">String</span> hexString = bytesToHexString(bytes);</span><br><span class="line">    <span class="built_in">print</span>(hexString);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h2 id="完整代码"><a href="#完整代码" class="headerlink" title="完整代码"></a>完整代码</h2><figure class="highlight dart"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">void</span> main() <span class="keyword">async</span> &#123;</span><br><span class="line">  <span class="built_in">print</span>(<span class="string">&quot;测试bmp1&quot;</span>);</span><br><span class="line">  <span class="keyword">final</span> bytes = <span class="keyword">await</span> loadAsset(<span class="string">&#x27;assets/images/bmp/1234.bmp&#x27;</span>);</span><br><span class="line">  <span class="comment">// String hexString = uint8ToHex(bytes);</span></span><br><span class="line"></span><br><span class="line">  <span class="built_in">String</span> hexString = bytesToHexString(bytes);</span><br><span class="line"></span><br><span class="line">  <span class="built_in">print</span>(hexString);</span><br><span class="line">  <span class="built_in">print</span>(<span class="string">&quot;测试bmp&quot;</span>);</span><br><span class="line">  <span class="comment">// final bytes2 = await loadAssetAsBytes(&#x27;assets/images/bmp/1234.bmp&#x27;);</span></span><br><span class="line">  <span class="comment">// Bitmap bitmap = await Bitmap.fromProvider(bytes);</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">Future&lt;Uint8List&gt; loadAsset(<span class="built_in">String</span> path) <span class="keyword">async</span> &#123;</span><br><span class="line">  <span class="keyword">final</span> byteData = <span class="keyword">await</span> rootBundle.load(path);</span><br><span class="line">  <span class="built_in">print</span>(byteData.buffer.asUint8List());</span><br><span class="line">  <span class="comment">// Bitmap bitmap = Bitmap.fromHeadful(800, 480, byteData.buffer as Uint8List);</span></span><br><span class="line">  <span class="keyword">return</span> Uint8List.sublistView(byteData);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="built_in">String</span> bytesToHexString(Uint8List bytes) &#123;</span><br><span class="line">  <span class="keyword">final</span> buffer = <span class="built_in">StringBuffer</span>();</span><br><span class="line"></span><br><span class="line">  <span class="keyword">for</span> (<span class="keyword">final</span> b <span class="keyword">in</span> bytes) &#123;</span><br><span class="line">    buffer.write(b.toRadixString(<span class="number">16</span>).padLeft(<span class="number">2</span>, <span class="string">&#x27;0&#x27;</span>));</span><br><span class="line">    <span class="built_in">print</span>(b.toRadixString(<span class="number">16</span>).padLeft(<span class="number">2</span>, <span class="string">&#x27;0&#x27;</span>));</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="keyword">return</span> buffer.toString();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;总结&quot;&gt;&lt;a href=&quot;#总结&quot; class=&quot;headerlink&quot; title=&quot;总结&quot;&gt;&lt;/a&gt;总结&lt;/h2&gt;&lt;p&gt;经过我的测试 直接定义 final buffer = StringBuffer(); 保存的字符串会只保存最前面一部分，后面的不会显示。&lt;b</summary>
+      
+    
+    
+    
+    <category term="flutter" scheme="http://blog.ahuaaa.cn/categories/flutter/"/>
+    
+    
+    <category term="flutter" scheme="http://blog.ahuaaa.cn/tags/flutter/"/>
+    
+    <category term="android" scheme="http://blog.ahuaaa.cn/tags/android/"/>
+    
+  </entry>
   
   <entry>
     <title>Stable Diffusion零基础教程(教你两种方式私有部署AI绘画平台,无限生成)</title>
@@ -252,9 +278,9 @@
     
     <category term="IDEA" scheme="http://blog.ahuaaa.cn/tags/IDEA/"/>
     
-    <category term="IntelliJ" scheme="http://blog.ahuaaa.cn/tags/IntelliJ/"/>
-    
     <category term="激活" scheme="http://blog.ahuaaa.cn/tags/%E6%BF%80%E6%B4%BB/"/>
+    
+    <category term="IntelliJ" scheme="http://blog.ahuaaa.cn/tags/IntelliJ/"/>
     
   </entry>
   
@@ -510,30 +536,6 @@
     
     
     <category term="源码分享" scheme="http://blog.ahuaaa.cn/tags/%E6%BA%90%E7%A0%81%E5%88%86%E4%BA%AB/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>使用VPN后git push等操作会报错</title>
-    <link href="http://blog.ahuaaa.cn/2021/11/26/202111230844/"/>
-    <id>http://blog.ahuaaa.cn/2021/11/26/202111230844/</id>
-    <published>2021-11-26T00:44:23.000Z</published>
-    <updated>2023-01-10T10:27:56.655Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="使用VPN后git-push等操作会报错"><a href="#使用VPN后git-push等操作会报错" class="headerlink" title="使用VPN后git push等操作会报错"></a>使用VPN后git push等操作会报错</h1><p>原因是因为设置的代理对终端不起作用<br>下面是用小奶猫(clash)时候的命令 假设你的本地代理地址是127.0.0.1，端口是7890，那么应该在终端执行：<br>PowerShell</p><figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$Env:http_proxy</span>=<span class="string">&quot;http://127.0.0.1:7890&quot;</span>;<span class="variable">$Env:https_proxy</span>=<span class="string">&quot;http://127.0.0.1:7890&quot;</span></span><br></pre></td></tr></table></figure><p>CMD</p><figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">set</span> http_proxy=http://<span class="number">127</span>.<span class="number">0</span>.<span class="number">0</span>.<span class="number">1</span>:<span class="number">7890</span> &amp; <span class="built_in">set</span> https_proxy=http://<span class="number">127</span>.<span class="number">0</span>.<span class="number">0</span>.<span class="number">1</span>:<span class="number">7890</span></span><br></pre></td></tr></table></figure><p>custom</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">export https_proxy=http://127.0.0.1:7890;export http_proxy=http://127.0.0.1:7890;export all_proxy=socks5://127.0.0.1:7890</span><br></pre></td></tr></table></figure><p>如果需要开机自动设置，把上面的代码加到终端的profile文件里（例如bash的.bash_profile，zsh的.zprofile）</p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;h1 id=&quot;使用VPN后git-push等操作会报错&quot;&gt;&lt;a href=&quot;#使用VPN后git-push等操作会报错&quot; class=&quot;headerlink&quot; title=&quot;使用VPN后git push等操作会报错&quot;&gt;&lt;/a&gt;使用VPN后git push等操作会报错&lt;/h1&gt;&lt;</summary>
-      
-    
-    
-    
-    <category term="git提交失败" scheme="http://blog.ahuaaa.cn/categories/git%E6%8F%90%E4%BA%A4%E5%A4%B1%E8%B4%A5/"/>
-    
-    
-    <category term="git提交失败" scheme="http://blog.ahuaaa.cn/tags/git%E6%8F%90%E4%BA%A4%E5%A4%B1%E8%B4%A5/"/>
     
   </entry>
   
