@@ -16118,6 +16118,7 @@ div#bannerGroup {
   }
 
   .topGroup .banner-button {
+    font-size: 14px;
     background: var(--anzhiyu-white-op);
     border-radius: 20px;
     color: var(--anzhiyu-white);
