@@ -9,6 +9,7 @@ var $web_box = document.getElementById("web_box");
 var $bodyWrap = document.getElementById("body-wrap");
 var $main = document.querySelector("main");
 var dragStartX;
+
 var adjectives = [
   "美丽的",
   "英俊的",
