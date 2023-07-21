@@ -6,7 +6,7 @@
   <link href="http://blog.ahuaaa.cn/atom.xml" rel="self"/>
   
   <link href="http://blog.ahuaaa.cn/"/>
-  <updated>2023-07-09T06:14:30.627Z</updated>
+  <updated>2023-07-21T18:30:00.884Z</updated>
   <id>http://blog.ahuaaa.cn/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>flutter OutlinedButton按钮分析</title>
+    <link href="http://blog.ahuaaa.cn/2023/07/22/flutter0006/"/>
+    <id>http://blog.ahuaaa.cn/2023/07/22/flutter0006/</id>
+    <published>2023-07-21T18:19:23.000Z</published>
+    <updated>2023-07-21T18:30:00.884Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="OutlinedButton-类"><a href="#OutlinedButton-类" class="headerlink" title="OutlinedButton 类"></a><code>OutlinedButton</code> 类</h3><p><code>OutlinedButton</code> 类是一个 Material Design 风格的 “Outlined Button”，它继承自 <code>ButtonStyleButton</code> 类，表示一个带有按钮样式的可点击组件。</p><p><code>OutlinedButton</code> 类的构造函数如下：</p><figure class="highlight dart"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> OutlinedButton(&#123;</span><br><span class="line">  <span class="keyword">super</span>.key,</span><br><span class="line">  <span class="keyword">required</span> <span class="keyword">super</span>.onPressed,</span><br><span class="line">  <span class="keyword">super</span>.onLongPress,</span><br><span class="line">  <span class="keyword">super</span>.onHover,</span><br><span class="line">  <span class="keyword">super</span>.onFocusChange,</span><br><span class="line">  <span class="keyword">super</span>.style,</span><br><span class="line">  <span class="keyword">super</span>.focusNode,</span><br><span class="line">  <span class="keyword">super</span>.autofocus = <span class="keyword">false</span>,</span><br><span class="line">  <span class="keyword">super</span>.clipBehavior = Clip.none,</span><br><span class="line">  <span class="keyword">super</span>.statesController,</span><br><span class="line">  <span class="keyword">required</span> <span class="keyword">super</span>.child,</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure><p>这个构造函数接受多个参数，其中一些是从父类 <code>ButtonStyleButton</code> 继承的。这些参数包括 <code>key</code>、<code>onPressed</code>、<code>onLongPress</code>、<code>onHover</code>、<code>onFocusChange</code>、<code>style</code>、<code>focusNode</code>、<code>autofocus</code>、<code>clipBehavior</code>、<code>statesController</code> 和 <code>child</code>。这些参数用于配置按钮的行为和外观。</p><h3 id="OutlinedButton-icon-工厂构造函数"><a href="#OutlinedButton-icon-工厂构造函数" class="headerlink" title="OutlinedButton.icon 工厂构造函数"></a><code>OutlinedButton.icon</code> 工厂构造函数</h3><p><code>OutlinedButton.icon</code> 是一个工厂构造函数，用于创建一个带有图标和标签的 <code>OutlinedButton</code> 实例。它的定义如下：</p><figure class="highlight dart"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">factory</span> OutlinedButton.icon(&#123;</span><br><span class="line">  Key? key,</span><br><span class="line">  <span class="keyword">required</span> VoidCallback? onPressed,</span><br><span class="line">  VoidCallback? onLongPress,</span><br><span class="line">  ButtonStyle? style,</span><br><span class="line">  FocusNode? focusNode,</span><br><span class="line">  <span class="built_in">bool?</span> autofocus,</span><br><span class="line">  Clip? clipBehavior,</span><br><span class="line">  MaterialStatesController? statesController,</span><br><span class="line">  <span class="keyword">required</span> Widget icon,</span><br><span class="line">  <span class="keyword">required</span> Widget label,</span><br><span class="line">&#125;) = _OutlinedButtonWithIcon;</span><br></pre></td></tr></table></figure><p>这个构造函数接受多个参数，包括 <code>key</code>、<code>onPressed</code>、<code>onLongPress</code>、<code>style</code>、<code>focusNode</code>、<code>autofocus</code>、<code>clipBehavior</code>、<code>statesController</code>、<code>icon</code> 和 <code>label</code>。其中，<code>icon</code> 和 <code>label</code> 是必需的参数，用于指定按钮中显示的图标和标签。</p><p><code>OutlinedButton.icon</code> 构造函数创建了一个 <code>_OutlinedButtonWithIcon</code> 实例，它是 <code>OutlinedButton</code> 的一个子类，它通过传递参数来配置按钮的行为和外观。<br>好的，我们继续分析剩下的部分。</p><h3 id="styleFrom-静态方法"><a href="#styleFrom-静态方法" class="headerlink" title="styleFrom 静态方法"></a><code>styleFrom</code> 静态方法</h3><p><code>styleFrom</code> 是一个静态方法，用于根据简单值创建一个 <code>ButtonStyle</code> 实例。它的定义如下：</p><ul><li><code>foregroundColor</code>：设置按钮的前景色，即文本和图标的颜色。</li><li><code>backgroundColor</code>：设置按钮的背景色。</li><li><code>disabledForegroundColor</code>：设置按钮在禁用状态下的前景色。</li><li><code>disabledBackgroundColor</code>：设置按钮在禁用状态下的背景色。</li><li><code>textStyle</code>：设置按钮中文本的样式，如字体大小、字体粗细等。</li><li><code>padding</code>：设置按钮的内边距。</li><li><code>minimumSize</code>：设置按钮的最小尺寸。</li><li><code>side</code>：设置按钮的边框样式。</li><li><code>shape</code>：设置按钮的形状，如圆角矩形、圆形等。</li><li><code>alignment</code>：设置按钮内容的对齐方式。</li><li><code>visualDensity</code>：设置按钮的视觉密度。</li><li><code>tapTargetSize</code>：设置按钮的点击目标大小。</li><li><code>overlayColor</code>：设置按钮的叠加颜色，用于点击时的水波纹效果。</li><li><code>shadowColor</code>：设置按钮的阴影颜色。</li><li><code>elevation</code>：设置按钮的海拔高度，影响阴影效果。</li><li><code>mouseCursor</code>：设置鼠标悬停在按钮上时的光标样式。</li><li><code>visualShape</code>：设置按钮的可视形状。</li><li><code>animationDuration</code>：设置按钮状态变化的动画持续时间。</li><li><code>enableFeedback</code>：设置按钮是否启用触觉反馈。</li><li><code>tapBehavior</code>：设置按钮的点击行为，如不可点击、禁用点击等。</li></ul><p>以上是 <code>styleFrom</code> 方法中的全部参数及其作用。可以根据需要选择其中的一个或多个参数，并传递相应的值来定制按钮的外观和行为。</p><h3 id="defaultStyleOf-方法"><a href="#defaultStyleOf-方法" class="headerlink" title="defaultStyleOf 方法"></a><code>defaultStyleOf</code> 方法</h3><p><code>defaultStyleOf</code> 是 <code>OutlinedButton</code> 类中的一个静态方法，用于获取默认的按钮样式。它的定义如下：</p><figure class="highlight dart"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">static</span> ButtonStyle defaultStyleOf(BuildContext context) &#123;</span><br><span class="line">  <span class="keyword">final</span> ThemeData theme = Theme.of(context);</span><br><span class="line">  <span class="keyword">final</span> ColorScheme colorScheme = theme.colorScheme;</span><br><span class="line">  <span class="keyword">final</span> ButtonStyle style = ElevatedButton.styleFrom(</span><br><span class="line">    primary: colorScheme.primary,</span><br><span class="line">    onPrimary: colorScheme.onPrimary,</span><br><span class="line">    onSurface: colorScheme.onSurface,</span><br><span class="line">    textStyle: theme.textTheme.button,</span><br><span class="line">  ).copyWith(</span><br><span class="line">    side: MaterialStateProperty.all&lt;BorderSide&gt;(</span><br><span class="line">      BorderSide(</span><br><span class="line">        color: colorScheme.primary,</span><br><span class="line">        width: <span class="number">1</span>,</span><br><span class="line">        style: BorderStyle.solid,</span><br><span class="line">      ),</span><br><span class="line">    ),</span><br><span class="line">  );</span><br><span class="line">  <span class="keyword">return</span> style;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>这个方法接受一个 <code>BuildContext</code> 对象作为参数，用于获取当前主题的颜色和文本样式。</p><p>在方法体中，首先通过 <code>Theme.of(context)</code> 获取当前的主题数据。然后，使用主题数据中的颜色方案和文本样式来设置按钮的默认样式。</p><p>具体来说，<code>defaultStyleOf</code> 方法使用 <code>ElevatedButton.styleFrom</code> 方法创建一个基本的按钮样式，然后通过 <code>copyWith</code> 方法进行进一步的定制。以下是对一些关键属性的解释：</p><ul><li><code>primary</code>：设置按钮的主要颜色，通常是按钮的背景色。</li><li><code>onPrimary</code>：设置按钮上文本和图标的颜色。</li><li><code>onSurface</code>：设置按钮在表面（即非禁用状态）上文本和图标的颜色。</li><li><code>textStyle</code>：设置按钮中文本的样式，如字体大小、字体粗细等。</li><li><code>side</code>：设置按钮的边框样式。</li></ul><p>最后，<code>defaultStyleOf</code> 方法返回一个包含默认样式的 <code>ButtonStyle</code> 实例。</p><p>可以在创建按钮时使用 <code>defaultStyleOf</code> 方法来获取默认样式，并根据需要进行进一步的定制。</p><h3 id="scaledPadding-函数"><a href="#scaledPadding-函数" class="headerlink" title="_scaledPadding 函数"></a><code>_scaledPadding</code> 函数</h3><p><code>_scaledPadding</code> 是 <code>OutlinedButton</code> 类中的一个私有函数，用于计算按钮的内边距。它的定义如下：</p><figure class="highlight dart"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">EdgeInsetsGeometry _scaledPadding(</span><br><span class="line">  EdgeInsetsGeometry padding,</span><br><span class="line">  VisualDensity visualDensity,</span><br><span class="line">) &#123;</span><br><span class="line">  <span class="keyword">if</span> (padding.isNonUniform) &#123;</span><br><span class="line">    <span class="keyword">return</span> visualDensity.baseSizeAdjustment * padding;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">final</span> <span class="built_in">double</span> delta = visualDensity.baseSizeAdjustment;</span><br><span class="line">  <span class="keyword">return</span> EdgeInsets.all(delta) + padding;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>这个函数接受两个参数：<code>padding</code> 和 <code>visualDensity</code>。<code>padding</code> 是按钮的原始内边距，<code>visualDensity</code> 是按钮的视觉密度。</p><p>在函数体中，首先判断 <code>padding</code> 是否是非均匀的内边距，即上、下、左、右四个方向的内边距是否不相等。如果是非均匀的内边距，那么乘以 <code>visualDensity.baseSizeAdjustment</code> 来调整内边距的大小。</p><p>如果 <code>padding</code> 是均匀的内边距，那么将 <code>visualDensity.baseSizeAdjustment</code> 的值加到每个方向的内边距上。</p><p>最后，返回计算后的 <code>EdgeInsetsGeometry</code> 对象，表示调整后的内边距。</p><p><code>_scaledPadding</code> 函数的作用是根据按钮的视觉密度调整按钮的内边距。视觉密度可以影响按钮的大小和间距，以适应不同的屏幕尺寸和设备像素密度。</p><p>这个函数通常在按钮的布局过程中被调用，用于计算最终的内边距值，以确保按钮在不同的视觉密度下保持一致的外观。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h3 id=&quot;OutlinedButton-类&quot;&gt;&lt;a href=&quot;#OutlinedButton-类&quot; class=&quot;headerlink&quot; title=&quot;OutlinedButton 类&quot;&gt;&lt;/a&gt;&lt;code&gt;OutlinedButton&lt;/code&gt; 类&lt;/h3&gt;&lt;p&gt;&lt;</summary>
+      
+    
+    
+    
+    <category term="flutter" scheme="http://blog.ahuaaa.cn/categories/flutter/"/>
+    
+    
+    <category term="flutter" scheme="http://blog.ahuaaa.cn/tags/flutter/"/>
+    
+    <category term="android" scheme="http://blog.ahuaaa.cn/tags/android/"/>
+    
+  </entry>
   
   <entry>
     <title>flutter蓝牙</title>
@@ -305,9 +331,9 @@
     
     <category term="uniapp" scheme="http://blog.ahuaaa.cn/tags/uniapp/"/>
     
-    <category term="Vue" scheme="http://blog.ahuaaa.cn/tags/Vue/"/>
-    
     <category term="物联网" scheme="http://blog.ahuaaa.cn/tags/%E7%89%A9%E8%81%94%E7%BD%91/"/>
+    
+    <category term="Vue" scheme="http://blog.ahuaaa.cn/tags/Vue/"/>
     
   </entry>
   
@@ -519,30 +545,6 @@
     
     
     <category term="JavaScript" scheme="http://blog.ahuaaa.cn/tags/JavaScript/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>自用的宝塔面板一键优化补丁</title>
-    <link href="http://blog.ahuaaa.cn/2021/12/11/202112112320/"/>
-    <id>http://blog.ahuaaa.cn/2021/12/11/202112112320/</id>
-    <published>2021-12-11T15:20:49.000Z</published>
-    <updated>2023-04-01T17:19:53.255Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="自用的宝塔面板一键优化补丁"><a href="#自用的宝塔面板一键优化补丁" class="headerlink" title="自用的宝塔面板一键优化补丁"></a>自用的宝塔面板一键优化补丁</h1><p>这个是自用的宝塔面板一键优化补丁，主要有以下优化项目：</p><ol><li><p>去除宝塔面板强制绑定账号</p></li><li><p>去除各种删除操作时的计算题与延时等待</p></li><li><p>去除创建网站自动创建的垃圾文件（index.html、404.html、.htaccess）</p></li><li><p>关闭未绑定域名提示页面，防止有人访问未绑定域名直接看出来是用的宝塔面板</p></li><li><p>关闭活动推荐与在线客服</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wget -O optimize.sh https://pans.ahuaaa.cn/optimize.sh &amp;&amp; bash optimize.sh</span><br></pre></td></tr></table></figure></li></ol><p>适用宝塔面板版本：7.7</p><p>全部使用补丁的方式，而不是替换文件的方式，方便后续升级版本的修改。</p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;h1 id=&quot;自用的宝塔面板一键优化补丁&quot;&gt;&lt;a href=&quot;#自用的宝塔面板一键优化补丁&quot; class=&quot;headerlink&quot; title=&quot;自用的宝塔面板一键优化补丁&quot;&gt;&lt;/a&gt;自用的宝塔面板一键优化补丁&lt;/h1&gt;&lt;p&gt;这个是自用的宝塔面板一键优化补丁，主要有以下优化项目</summary>
-      
-    
-    
-    
-    <category term="宝塔面板" scheme="http://blog.ahuaaa.cn/categories/%E5%AE%9D%E5%A1%94%E9%9D%A2%E6%9D%BF/"/>
-    
-    
-    <category term="宝塔面板" scheme="http://blog.ahuaaa.cn/tags/%E5%AE%9D%E5%A1%94%E9%9D%A2%E6%9D%BF/"/>
     
   </entry>
   
