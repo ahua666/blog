@@ -1770,7 +1770,7 @@ i.anzhiyu-icon-hashtag {
   --animation-in: cubic-bezier(0.6, 0.2, 0.25, 1);
   --animation-ot: opacity 0.5s var(--animation-in) backwards, transform 1s var(--animation-in) backwards;
   --animation-otf: opacity 0.5s var(--animation-in) backwards, transform 1s var(--animation-in) backwards, filter 0.7s var(--animation-in) backwards;
-  --global-font-size: 17px;
+  --global-font-size: 16px;
   --global-bg: #fff;
   --font-color: #4c4948;
   --hr-border: rgba(161,172,247,0.137);
@@ -1895,7 +1895,7 @@ i.anzhiyu-icon-hashtag {
   --anzhiyu-blue-tint: rgba(92,161,255,0.1);
   --anzhiyu-theme-op-deep: rgba(0,132,255,0.867);
   --global-bg: #18171d;
-  --anzhiyu-theme: #0084ff;
+  --anzhiyu-theme: #f2b94b;
   --anzhiyu-theme-deep: #0076e5;
   --anzhiyu-theme-op: rgba(242,185,75,0.137);
   --anzhiyu-blue: #0084ff;
@@ -6141,7 +6141,6 @@ body[data-type="link"] #page .page-title {
 }
 @media screen and (max-width: 768px) {
   #recent-posts > .recent-post-item >.recent-post-info > .article-title {
-    -webkit-line-clamp: 1 !important;
     top: 20px;
   }
 }
@@ -6175,17 +6174,24 @@ body[data-type="link"] #page .page-title {
   -ms-flex-align: center;
   -webkit-align-items: center;
   align-items: center;
-  white-space: nowrap;
-  overflow: hidden;
-  -o-text-overflow: ellipsis;
-  text-overflow: ellipsis;
-  display: inline-block;
-  bottom: 15px;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  bottom: 30px;
 }
 #recent-posts > .recent-post-item >.recent-post-info > .article-meta-wrap .sticky-warp {
   position: absolute;
   top: -100px;
   right: 32px;
+}
+#recent-posts > .recent-post-item >.recent-post-info > .article-meta-wrap .article-meta {
+  white-space: nowrap;
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
 }
 #recent-posts > .recent-post-item >.recent-post-info > .article-meta-wrap > .post-meta-date {
   color: var(--anzhiyu-fontcolor);
@@ -6208,6 +6214,10 @@ body[data-type="link"] #page .page-title {
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  white-space: nowrap;
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
 }
 @media screen and (max-width: 500px) {
   #recent-posts > .recent-post-item >.recent-post-info > .article-meta-wrap > .post-meta-date {
@@ -6222,7 +6232,7 @@ body[data-type="link"] #page .page-title {
   margin: 0 4px 0 0;
 }
 #recent-posts > .recent-post-item >.recent-post-info > .article-meta-wrap .article-meta-label {
-  padding-right: 4px;
+  display: none;
 }
 #recent-posts > .recent-post-item >.recent-post-info > .article-meta-wrap .article-meta-separator {
   margin: 0 6px;
