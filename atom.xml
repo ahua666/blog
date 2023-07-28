@@ -6,7 +6,7 @@
   <link href="http://blog.ahuaaa.cn/atom.xml" rel="self"/>
   
   <link href="http://blog.ahuaaa.cn/"/>
-  <updated>2023-07-21T18:36:10.005Z</updated>
+  <updated>2023-07-28T07:19:38.201Z</updated>
   <id>http://blog.ahuaaa.cn/</id>
   
   <author>
@@ -15,6 +15,37 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>2023.3.0版JRebel插件激活</title>
+    <link href="http://blog.ahuaaa.cn/2023/07/28/JRebel/"/>
+    <id>http://blog.ahuaaa.cn/2023/07/28/JRebel/</id>
+    <published>2023-07-28T07:02:06.000Z</published>
+    <updated>2023-07-28T07:19:38.201Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="2023-3-0版JRebel插件激活"><a href="#2023-3-0版JRebel插件激活" class="headerlink" title="2023.3.0版JRebel插件激活"></a>2023.3.0版JRebel插件激活</h1><ol><li><p>删掉用户名下的.jrebel文件夹，否则之前激活失败会导致无法激活</p></li><li><p>下载最新版JRebel插件</p></li><li><p>打开IDEA，点击File-&gt;Settings-&gt;Plugins-&gt;Install Plugin from Disk…，选择下载的JRebel插件，点击OK<br><img src="https://img.ahuaaa.cn/img/e2132858059eebf65612290101f20dc.png"></p></li><li><p>重启IDEA，点击settings-&gt;JRebel &amp;Xrebel -&gt;，选择激活</p></li><li><p>下载代理并双击打开 找对应版本下载 <a href="https://github.com/ilanyu/ReverseProxy/releases/tag/v1.4">https://github.com/ilanyu/ReverseProxy/releases/tag/v1.4</a></p></li><li><p>输入激活地址<a href="http://localhost:8888/%7BGUID%7D,%E9%82%AE%E7%AE%B1%E9%9A%8F%E4%BE%BF%E9%83%BD%E5%8F%AF%E4%BB%A5%EF%BC%8C%E5%8B%BE%E9%80%89%E5%90%8C%E6%84%8F%EF%BC%8C%E7%82%B9%E5%87%BB%E6%8F%90%E4%BA%A4">http://localhost:8888/{GUID},邮箱随便都可以，勾选同意，点击提交</a><br><img src="https://img.ahuaaa.cn/img/1690528306014.png"><br>guid在线生成地址 <a href="http://www.guidgen.com/">www.guidgen.com/</a></p></li><li><p>把JRebel设置为离线工作模式，点一下work offline。<br><img src="https://img.ahuaaa.cn/img/dfe1ae8aea10d73b4b242a683c44e62.png"></p></li></ol>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;2023-3-0版JRebel插件激活&quot;&gt;&lt;a href=&quot;#2023-3-0版JRebel插件激活&quot; class=&quot;headerlink&quot; title=&quot;2023.3.0版JRebel插件激活&quot;&gt;&lt;/a&gt;2023.3.0版JRebel插件激活&lt;/h1&gt;&lt;ol&gt;
+</summary>
+      
+    
+    
+    
+    <category term="破解" scheme="http://blog.ahuaaa.cn/categories/%E7%A0%B4%E8%A7%A3/"/>
+    
+    
+    <category term="IDEA" scheme="http://blog.ahuaaa.cn/tags/IDEA/"/>
+    
+    <category term="破解" scheme="http://blog.ahuaaa.cn/tags/%E7%A0%B4%E8%A7%A3/"/>
+    
+    <category term="JRebel" scheme="http://blog.ahuaaa.cn/tags/JRebel/"/>
+    
+    <category term="激活" scheme="http://blog.ahuaaa.cn/tags/%E6%BF%80%E6%B4%BB/"/>
+    
+  </entry>
   
   <entry>
     <title>flutter OutlinedButton按钮分析</title>
@@ -331,9 +362,9 @@
     
     <category term="uniapp" scheme="http://blog.ahuaaa.cn/tags/uniapp/"/>
     
-    <category term="物联网" scheme="http://blog.ahuaaa.cn/tags/%E7%89%A9%E8%81%94%E7%BD%91/"/>
-    
     <category term="Vue" scheme="http://blog.ahuaaa.cn/tags/Vue/"/>
+    
+    <category term="物联网" scheme="http://blog.ahuaaa.cn/tags/%E7%89%A9%E8%81%94%E7%BD%91/"/>
     
   </entry>
   
@@ -521,30 +552,6 @@
     <category term="Vue" scheme="http://blog.ahuaaa.cn/tags/Vue/"/>
     
     <category term="three.js" scheme="http://blog.ahuaaa.cn/tags/three-js/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Js根据页面大小判断是否移动端</title>
-    <link href="http://blog.ahuaaa.cn/2022/01/18/202201181710/"/>
-    <id>http://blog.ahuaaa.cn/2022/01/18/202201181710/</id>
-    <published>2022-01-18T09:10:27.000Z</published>
-    <updated>2023-01-10T10:27:56.668Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="根据设备页面的大小，判断是否移动端打开。"><a href="#根据设备页面的大小，判断是否移动端打开。" class="headerlink" title="根据设备页面的大小，判断是否移动端打开。"></a>根据设备页面的大小，判断是否移动端打开。</h1><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"> <span class="keyword">var</span> oWidth = <span class="built_in">document</span>.documentElement.clientWidth || <span class="built_in">document</span>.body.clientWidth;</span><br><span class="line"><span class="keyword">if</span> (oWidth &lt; <span class="number">1200</span>) &#123;&#125; <span class="keyword">else</span> &#123;</span><br><span class="line">   <span class="comment">// window.location.href = &quot;index.php&quot;;</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="built_in">window</span>.addEventListener(<span class="string">&quot;orientationchange&quot;</span>, <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="keyword">var</span> oWidth = <span class="built_in">document</span>.documentElement.clientWidth || <span class="built_in">document</span>.body.clientWidth;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">if</span> (oWidth &lt; <span class="number">1200</span>) &#123;</span><br><span class="line"></span><br><span class="line">    &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">        <span class="comment">//   window.location.href = &quot;index.php&quot;;</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;, <span class="literal">false</span>);</span><br><span class="line"><span class="built_in">window</span>.addEventListener(<span class="string">&quot;resize&quot;</span>, <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="keyword">var</span> oWidth = <span class="built_in">document</span>.documentElement.clientWidth || <span class="built_in">document</span>.body.clientWidth;</span><br><span class="line">    <span class="keyword">if</span> (oWidth &lt; <span class="number">1200</span>) &#123;&#125; <span class="keyword">else</span> &#123;</span><br><span class="line">         <span class="comment">//  window.location.href = &quot;index.php&quot;;</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;, <span class="literal">false</span>);</span><br></pre></td></tr></table></figure>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;h1 id=&quot;根据设备页面的大小，判断是否移动端打开。&quot;&gt;&lt;a href=&quot;#根据设备页面的大小，判断是否移动端打开。&quot; class=&quot;headerlink&quot; title=&quot;根据设备页面的大小，判断是否移动端打开。&quot;&gt;&lt;/a&gt;根据设备页面的大小，判断是否移动端打开。&lt;/h1&gt;&lt;</summary>
-      
-    
-    
-    
-    <category term="JavaScript" scheme="http://blog.ahuaaa.cn/categories/JavaScript/"/>
-    
-    
-    <category term="JavaScript" scheme="http://blog.ahuaaa.cn/tags/JavaScript/"/>
     
   </entry>
   

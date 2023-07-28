@@ -1,3 +1,4 @@
+http://blog.ahuaaa.cn/2023/07/28/JRebel/
 http://blog.ahuaaa.cn/2023/07/22/flutter0006/
 http://blog.ahuaaa.cn/2023/05/10/flutter0005/
 http://blog.ahuaaa.cn/2023/05/01/flutter0004/
@@ -9,4 +10,3 @@ http://blog.ahuaaa.cn/2023/04/04/UniappBluetooth/
 http://blog.ahuaaa.cn/2023/03/16/StarNavigation/
 http://blog.ahuaaa.cn/2023/02/21/tools/
 http://blog.ahuaaa.cn/2023/01/18/Ezdun/
-http://blog.ahuaaa.cn/2023/01/12/js-gbk/

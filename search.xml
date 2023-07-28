@@ -4,6 +4,37 @@
   
     
     <entry>
+      <title>2023.3.0版JRebel插件激活</title>
+      <link href="/2023/07/28/JRebel/"/>
+      <url>/2023/07/28/JRebel/</url>
+      
+        <content type="html"><![CDATA[<h1 id="2023-3-0版JRebel插件激活"><a href="#2023-3-0版JRebel插件激活" class="headerlink" title="2023.3.0版JRebel插件激活"></a>2023.3.0版JRebel插件激活</h1><ol><li><p>删掉用户名下的.jrebel文件夹，否则之前激活失败会导致无法激活</p></li><li><p>下载最新版JRebel插件</p></li><li><p>打开IDEA，点击File-&gt;Settings-&gt;Plugins-&gt;Install Plugin from Disk…，选择下载的JRebel插件，点击OK<br><img src="https://img.ahuaaa.cn/img/e2132858059eebf65612290101f20dc.png"></p></li><li><p>重启IDEA，点击settings-&gt;JRebel &amp;Xrebel -&gt;，选择激活</p></li><li><p>下载代理并双击打开 找对应版本下载 <a href="https://github.com/ilanyu/ReverseProxy/releases/tag/v1.4">https://github.com/ilanyu/ReverseProxy/releases/tag/v1.4</a></p></li><li><p>输入激活地址<a href="http://localhost:8888/%7BGUID%7D,%E9%82%AE%E7%AE%B1%E9%9A%8F%E4%BE%BF%E9%83%BD%E5%8F%AF%E4%BB%A5%EF%BC%8C%E5%8B%BE%E9%80%89%E5%90%8C%E6%84%8F%EF%BC%8C%E7%82%B9%E5%87%BB%E6%8F%90%E4%BA%A4">http://localhost:8888/{GUID},邮箱随便都可以，勾选同意，点击提交</a><br><img src="https://img.ahuaaa.cn/img/1690528306014.png"><br>guid在线生成地址 <a href="http://www.guidgen.com/">www.guidgen.com/</a></p></li><li><p>把JRebel设置为离线工作模式，点一下work offline。<br><img src="https://img.ahuaaa.cn/img/dfe1ae8aea10d73b4b242a683c44e62.png"></p></li></ol>]]></content>
+      
+      
+      <categories>
+          
+          <category> 破解 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> IDEA </tag>
+            
+            <tag> 破解 </tag>
+            
+            <tag> JRebel </tag>
+            
+            <tag> 激活 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>flutter OutlinedButton按钮分析</title>
       <link href="/2023/07/22/flutter0006/"/>
       <url>/2023/07/22/flutter0006/</url>
@@ -313,9 +344,9 @@
             
             <tag> uniapp </tag>
             
-            <tag> 物联网 </tag>
-            
             <tag> Vue </tag>
+            
+            <tag> 物联网 </tag>
             
         </tags>
       
